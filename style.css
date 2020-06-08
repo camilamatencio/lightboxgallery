@@ -8,7 +8,11 @@ body {
 	display: none;
 }
 
-.galeria-uno {
+#galeria-dos {
+	display: none;
+}
+
+.galeria-universal {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.8);
@@ -62,7 +66,7 @@ body {
 	font-size: 12px;
 }
 
-.mySlides {
+.images-universal {
 	width: 100%;
 }
 
@@ -75,8 +79,8 @@ body {
 
 @media (max-width: 640px) {
 	.arrows {
-		width: 20px;
-		height: 20px;
+		width: 18px;
+		height: 18px;
 	}
 
 	.back {
