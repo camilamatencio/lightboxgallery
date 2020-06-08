@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- galeria escondida -->
+    <div id="galeria-uno" class="galeria-uno">
+        <div class="container-gallery">
+            <img class="arrows exit" src="cancelar.png" onclick="closeWindow()" alt="">
+            <img class="arrows back" src="izquierdo.png" onclick="plusDivs(-1)" alt="">
+            <img class="arrows next" src="derecho.png" onclick="plusDivs(+1)" alt="">
+            <img class="mySlides" src="2.jpeg">
+            <img class="mySlides" src="3.jpeg">
+            <img class="mySlides" src="4.jpeg">
+            <p>FILM</p>
+            <p>Produced by: Aldana Fungueiro<br>Director: Aldana Fungueiro</p>
+            <p>2019</p>
+        </div>
+    </div>
+    <!-- end galeria escondida -->
+    <div>
+        <a onclick="myFunction()"  href="#">
+            <img class="uno" src="1.jpeg" alt="">
+        </a>
+        <img class="uno" src="1.jpeg" alt="">
+    </div>
+
+
+    <script>
+        /* por cada galeria */
+        function myFunction() {
+            document.getElementById("galeria-uno").style.cssText  = "display: flex;";
+        }
+
+        function closeWindow() {
+            document.getElementById("galeria-uno").style.display = "none";
+        }
+        /* -------- */
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+        showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+
+</body>
+</html>
