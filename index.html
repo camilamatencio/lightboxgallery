@@ -4,49 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Gallery</title>
 </head>
 <body>
-    <!-- galeria escondida 1 -->
-    <div id="galeria-uno" class="galeria-universal">
+    <!-- hidden gallery 1 -->
+    <div id="gallery-1" class="universal-gallery">
         <div class="container-gallery">
-            <img class="arrows exit" src="cancelar.png" onclick="closeWindow()" alt="">
-            <img class="arrows back" src="izquierdo.png" onclick="plusDivs(-1)" alt="">
-            <img class="arrows next" src="derecho.png" onclick="plusDivs(+1)" alt="">
-            <img class="mySlides images-universal" src="2.jpeg">
-            <img class="mySlides images-universal" src="3.jpeg">
-            <img class="mySlides images-universal" src="4.jpeg">
-            <p>FILM</p>
-            <p>Produced by: Aldana Fungueiro<br>Director: Aldana Fungueiro</p>
-            <p>2019</p>
+            <img class="arrows exit" src="./media/cancelar.png" onclick="closeWindow()" alt="">
+            <img class="arrows back" src="./media/izquierdo.png" onclick="plusDivs(-1)" alt="">
+            <img class="arrows next" src="./media/derecho.png" onclick="plusDivs(+1)" alt="">
+            <img class="mySlides images-universal" src="./media/norway-2.jpg">
+            <img class="mySlides images-universal" src="./media/norway-3.jpg">
+            <img class="mySlides images-universal" src="./media/norway-4.jpg">
+            <p>Norway</p>
+            <p>Produced by: Camila Atencio<br>Director: Camila Atencio</p>
+            <p>2020</p>
         </div>
     </div>
-    <!-- end galeria escondida 1 -->
-    <!-- galeria escondida 2 -->
-        <div id="galeria-dos" class="galeria-universal">
-            <div class="container-gallery">
-                <img class="arrows exit" src="cancelar.png" onclick="closeWindowTwo()" alt="">
-                <img class="arrows back" src="izquierdo.png" onclick="plusDivsTwo(-1)" alt="">
-                <img class="arrows next" src="derecho.png" onclick="plusDivsTwo(+1)" alt="">
-                <img class="mySlidesTwo images-universal" src="6.jpg">
-                <img class="mySlidesTwo images-universal" src="7.jpeg">
-                <p>CACONA</p>
-                <p>Produced by: Aldana Fungueiro<br>Director: Aldana Fungueiro</p>
-                <p>2019</p>
-            </div>
+    <!-- end hidden gallery 1 -->
+    <!-- hidden gallery 2 -->
+    <div id="gallery-2" class="universal-gallery">
+        <div class="container-gallery">
+            <img class="arrows exit" src="./media/cancelar.png" onclick="closeWindowTwo()" alt="">
+            <img class="arrows back" src="./media/izquierdo.png" onclick="plusDivsTwo(-1)" alt="">
+            <img class="arrows next" src="./media/derecho.png" onclick="plusDivsTwo(+1)" alt="">
+            <img class="mySlidesTwo images-universal" src="./media/iceland-2.jpg">
+            <img class="mySlidesTwo images-universal" src="./media/iceland-3.jpg">
+            <img class="mySlidesTwo images-universal" src="./media/iceland-4.jpg">
+            <img class="mySlidesTwo images-universal" src="./media/iceland-5.jpg">
+            <p>Iceland</p>
+            <p>Produced by: Camila Atencio<br>Director: Camila Atencio</p>
+            <p>2020</p>
         </div>
-        <!-- end galeria escondida 2 -->
+    </div>
+    <!-- end hidden gallery 2 -->
     <div>
-        <!--foto 1-->
-        <a onclick="myFunction()"  href="#">
-            <img class="uno" src="1.jpeg" alt="">
-        </a>
-        <!-- end foto 1-->
-        <!--foto 2-->
-        <a onclick="myFunctionTwo()"  href="#">
-            <img class="uno" src="5.jpg" alt="">
-        </a>
-        <!-- end foto 2-->
+        <!-- main photo 1 -->
+        <img onclick="myFunction()" class="img" src="./media/norway-1.jpg" alt="">
+        <!-- main photo 2 -->
+        <img onclick="myFunctionTwo()" class="img" src="./media/iceland-1.jpg" alt="">
     </div>
     <script src="scripts.js"></script>
 </body>

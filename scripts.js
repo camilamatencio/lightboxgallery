@@ -1,10 +1,10 @@
-/* galeria 1 */
+/* gallery */
 function myFunction() {
-    document.getElementById("galeria-uno").style.cssText  = "display: flex;";
+    document.getElementById("gallery-1").style.cssText  = "display: flex;";
 }
 
 function closeWindow() {
-    document.getElementById("galeria-uno").style.display = "none";
+    document.getElementById("gallery-1").style.display = "none";
 }
 
 var slideIndex = 1;
@@ -26,13 +26,13 @@ x[slideIndex-1].style.display = "block";
 }
 /* ----1---- */
 
-/* galeria 2 */
+/* gallery 2 */
 function myFunctionTwo() {
-    document.getElementById("galeria-dos").style.cssText  = "display: flex;";
+    document.getElementById("gallery-2").style.cssText  = "display: flex;";
 }
 
 function closeWindowTwo() {
-    document.getElementById("galeria-dos").style.display = "none";
+    document.getElementById("gallery-2").style.display = "none";
 }
 
 var slideIndex = 1;
