@@ -1,2 +1,2 @@
-# lightboxgallery
-Pure HTML and CSS responsive gallery
+# Gallery
+Pure HTML | CSS | JS responsive gallery
